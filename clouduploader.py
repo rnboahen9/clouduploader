@@ -30,4 +30,4 @@ if __name__ == "__main__":
     parser.add_argument("--storage-class", help="Optional storage class for the uploaded file")
     args = parser.parse_args()
 
-    upload_to_bucket(args.file_path, args.bucket_name, args.s3_directory, args.storage_class)
+    upload_to_bucket(args.file_path, args.s3_bucket, args.s3_directory, args.storage_class)
